@@ -22,9 +22,9 @@ namespace MercilessDungeon
        // Constructor
        public Card(string title, string description)
        {
-           if (String.IsNullOrWhiteSpace(title)) throw new ArgumentOutOfRangeException("Card title can not be empty");
+           if (String.IsNullOrWhiteSpace(title)) throw new ArgumentOutOfRangeException("title", "Card title can not be empty");
            Title = title;
-           if (String.IsNullOrWhiteSpace(description)) throw new ArgumentOutOfRangeException("Card description can not be empty");
+           if (String.IsNullOrWhiteSpace(description)) throw new ArgumentOutOfRangeException("description", "Card description can not be empty");
            Description = description;
 
        }
